@@ -32,8 +32,8 @@ $config = [
                 'transport' => [
                     'class' => 'Swift_SmtpTransport',
                     'host' => 'smtp.yandex.ru',
-                    'username' => "utkin.v.dev@yandex.ru",
-                    'password' => "lavrlvcnaqtcgsgm",
+                    'username' => "",
+                    'password' => "",
                     'port' => '465',
                     'encryption' => 'SSL',
                 ],
