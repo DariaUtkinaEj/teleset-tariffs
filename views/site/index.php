@@ -4,7 +4,7 @@ use app\components\Resizer;
 use yii\bootstrap4\ActiveForm;
 
 ?>
-<section id="portfolio">
+<section id="portfolio" class="portfolio">
   <div class="container portfolio-flex-grid">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -21,7 +21,7 @@ use yii\bootstrap4\ActiveForm;
                 <i class="fa fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img src="<?= Resizer::resize(380, 250, '/img/tariffs/tariff1.png')?>" class="img-responsive" alt="">
+            <img src="<?= Resizer::resize(380, 500, '/img/tariffs/tariff1.png')?>" class="img-responsive" alt="">
           </a>
         </div>
 
@@ -32,7 +32,7 @@ use yii\bootstrap4\ActiveForm;
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="<?= Resizer::resize(380, 250, '/img/tariffs/tariff2.jpg')?>" class="img-responsive" alt="">
+          <img src="<?= Resizer::resize(380, 500, '/img/tariffs/tariff2.jpg')?>" class="img-responsive" alt="">
         </a>
       </div>
 
@@ -43,7 +43,7 @@ use yii\bootstrap4\ActiveForm;
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="<?= Resizer::resize(380, 250, '/img/tariffs/tariff3.png')?>" class="img-responsive" alt="">
+          <img src="<?= Resizer::resize(380, 500, '/img/tariffs/tariff3.png')?>" class="img-responsive" alt="">
         </a>
       </div>
 

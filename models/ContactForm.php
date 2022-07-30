@@ -34,4 +34,13 @@ class ContactForm extends Model
         }
         return false;
     }
+
+    public function attributeLabels()
+    {
+        return [
+            'name' => 'Представьтесь',
+            'email' => 'Ваш email',
+            'message' => 'Оставьте сообщение'
+        ];
+    }
 }
