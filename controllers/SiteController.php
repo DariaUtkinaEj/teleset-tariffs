@@ -24,11 +24,13 @@ class SiteController extends Controller
 
     public function actionPrivacyPolicy()
     {
+        $this->layout = 'secondary';
         return $this->render('privacy-policy');
     }
 
     public function actionSendMail()
     {
+        $this->layout = 'secondary';
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact()) return $this->render('success');
         return $this->render('fail');

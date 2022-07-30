@@ -493,6 +493,7 @@ footer .footer-below {
 
 .navbar-nav>.active>a {
     background-color: #3fc320  !important;
+    border-radius: 25px;
 }
 
 /* Fix modal mouse wheel issues */
@@ -538,4 +539,14 @@ footer .footer-below {
     color: #ffffff;
     background-color: #0154c8 !important;
     border-color: #0154c8!important;
+}
+
+.portfolio {
+    margin-top: 100px;
+}
+
+@media(max-width:767px) {
+    .portfolio {
+        margin-top: 0px;
+    }
 }

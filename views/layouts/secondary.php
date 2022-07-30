@@ -53,13 +53,13 @@ AppAsset::register($this);
           <a href="/#portfolio"></a>
         </li>
         <li class="page-scroll">
-          <a href="#portfolio">Тарифы</a>
+          <a href="/#portfolio">Тарифы</a>
         </li>
         <li class="page-scroll">
-          <a href="#about">О нас</a>
+          <a href="/#about">О нас</a>
         </li>
         <li class="page-scroll">
-          <a href="#contact-test">Оставить заявку</a>
+          <a href="/#contact-test">Оставить заявку</a>
         </li>
       </ul>
     </div>
