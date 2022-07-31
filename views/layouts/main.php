@@ -68,6 +68,20 @@ AppAsset::register($this);
   <!-- /.container-fluid -->
 </nav>
 
+<header>
+  <div class="container background-main" id="page-top">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro-text">
+          <span class="name">Телесеть-Уфа</span>
+          <hr class="star-light" />
+          <span class="skills">Мы делаем ваш мир ярче!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
 <?= $content ?>
 
 <footer class="text-center">

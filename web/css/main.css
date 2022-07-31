@@ -542,7 +542,7 @@ footer .footer-below {
 }
 
 .portfolio {
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 @media(max-width:767px) {
