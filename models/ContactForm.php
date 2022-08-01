@@ -21,7 +21,7 @@ class ContactForm extends Model
         ];
     }
 
-    public function contact($email = 'daria_utkina_ej@proton.me')
+    public function contact($email = 'support@teleset-ufa.ru')
     {
         if ($this->validate()) {
             $composedMessage = Yii::$app->mailer->compose()
