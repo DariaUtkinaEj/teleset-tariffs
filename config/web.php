@@ -26,15 +26,15 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'mailer' => function () {
+        'mailer' => function () use ($params) {
             return Yii::createObject([
                 'class' => 'yii\swiftmailer\Mailer',
                 'useFileTransport' => false,
                 'transport' => [
                     'class' => 'Swift_SmtpTransport',
                     'host' => 'smtp.yandex.ru',
-                    'username' => "office@teleset-ufa.ru",
-                    'password' => "",
+                    'username' => $params['senderEmail'],
+                    'password' => $params['password'],
                     'port' => '465',
                     'encryption' => 'SSL',
                 ],

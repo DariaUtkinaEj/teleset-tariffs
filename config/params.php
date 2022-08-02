@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'adminEmail' => 'admin@example.com',
-    'senderEmail' => 'utkin.v.dev@yandex.ru',
-    'senderName' => 'Example.com mailer',
+    'senderEmail' => 'teleset.noreply@yandex.ru',
+    'password' => "fsjrddwnrkcqhxok",
+    'senderName' => 'Автоматическое уведомление с сайта тарифов'
 ];

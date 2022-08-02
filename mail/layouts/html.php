@@ -15,7 +15,7 @@ use yii\helpers\Html;
 </head>
 <body>
     <?php $this->beginBody() ?>
-    <?= $content ?>
+    <?= 1111 ?>
     <?php $this->endBody() ?>
 </body>
 </html>

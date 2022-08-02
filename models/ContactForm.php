@@ -21,7 +21,7 @@ class ContactForm extends Model
         ];
     }
 
-    public function contact($email = 'support@teleset-ufa.ru')
+    public function contact($email = 'teleset.noreply@yandex.ru')
     {
         if ($this->validate()) {
             $composedMessage = Yii::$app->mailer->compose()
@@ -29,7 +29,13 @@ class ContactForm extends Model
                 ->setFrom([Yii::$app->params['senderEmail'] => Yii::$app->params['senderName']])
                 ->setReplyTo([$this->email => $this->name])
                 ->setSubject('Заявка на подключение тарифа')
-                ->setTextBody($this->message);
+                ->setHtmlBody(
+                    "<h1>Имя заявителя: $this->name</h1>" .
+                                "<h2>Почта заявителя: $this->email</h2>" .
+                                "<h3>Сообщение</h3>" .
+                                "<p>$this->message</p>"
+                );
+
                 return $composedMessage->send();
         }
         return false;
